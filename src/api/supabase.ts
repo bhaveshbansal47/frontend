@@ -1,4 +1,6 @@
-const BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:3001";
+// i have added actual url here for deployment
+
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "https://delve-backend.onrender.com";
 
 export async function getProjects(token: string) {
     const res = await fetch(`${BASE_URL}/api/supabase/projects`, {
